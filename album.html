@@ -1,0 +1,370 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Owen</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="index.html">Home</a></li>
+                                        <li><a href="album.html">Portfolio</a></li>
+                                        <li><a href="testimonial.html">Testimonials</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="social_links">
+                                <ul>
+                                    <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                    <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                    <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area breadcam_bg_2 black_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="bradcam_text text-center">
+                            <h3>Portfolio</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / bradcam_area  -->
+
+        <script>
+            /* Get the element you want displayed in fullscreen */ 
+            
+            
+            /* Function to open fullscreen mode and pause the video once closed full screen*/
+            function openFullscreen(video) {
+
+                var elem = document.getElementById(video);
+
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                    elem.play();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                    elem.play();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                    elem.play();
+                }
+
+                elem.addEventListener('fullscreenchange',
+                function(event) {
+                    if (!document.fullscreenElement) {
+                        elem.pause();
+                    }
+                },false);
+
+                elem.addEventListener('webkitfullscreenchange',
+                function(event) {
+                    if (!document.webkitFullscreenElement) {
+                        elem.pause();
+                    }
+                },false);
+
+            }
+
+            </script>
+
+    <!-- gallery_area  -->
+    <div class="gallery_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="section_title text-center mb-50">
+                        <h3>About</h3>
+                        <p>This is my portfolio NICE!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0 ">
+            <div class="row no-gutters">
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/beatyTimeThumb.jpg" alt="" >
+                            <video width="0%" controls id="1" >
+                                <source src="/ownemasey2/img/banner/Beauty%20Time%20Salon%20Film.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('1');"></button>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/oragneJuice.jpg" alt="" >
+                            <video width="0%" controls id="2" >
+                                <source src="/ownemasey2/img/video/OrangeJuice.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('2');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/stickyChicken.jpg" alt="" >
+                            <video width="0%" controls id="3" >
+                                <source src="/ownemasey2/img/video/StickyChicken.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('3');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/kinder.jpg" alt="" >
+                            <video width="0%" controls id="4" >
+                                <source src="/ownemasey2/img/video/KinderBrownie.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('4');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/posHRconf22.jpg" alt="" >
+                            <video width="0%" controls id="5" >
+                                <source src="/ownemasey2/img/video/PositiveHRconference.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('5');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/postHRForum.jpg" alt="" >
+                            <video width="0%" controls id="6" >
+                                <source src="/ownemasey2/img/video/PositiveHRForum.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('6');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/CCA.jpg" alt="" >
+                            <video width="0%" controls id="7" >
+                                <source src="/ownemasey2/img/video/CCA.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('7');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/mileyDom.jpg" alt="" >
+                            <video width="0%" controls id="8" >
+                                <source src="/ownemasey2/img/video/MidyeDolma.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('8');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/BFF.jpg" alt="" >
+                            <video width="0%" controls id="9" >
+                                <source src="/ownemasey2/img/video/BFF.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('9');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/LancashireWildlifeTrust.jpg" alt="" >
+                            <video width="0%" controls id="10" >
+                                <source src="/ownemasey2/img/video/LancashireWildlifeTrust.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('10');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/BlackburnCollege.jpg" alt="" >
+                            <video width="0%" controls id="11" >
+                                <source src="/ownemasey2/img/video/BlackburnCollege.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('11');"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_photography">
+                        <div class="thumb">
+                            <img src="img/thumbnails/TheGraftMovement.jpg" alt="" >
+                            <video width="0%" controls id="12" >
+                                <source src="/ownemasey2/img/video/TheGraftMovement.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <button class="hover" onclick="openFullscreen('12');"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /gallery_area  -->
+
+    <!-- Space Before Footer-->
+
+    <div class="photography_skill_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-md-9">
+                    <div class="section_title text-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Space Before Footer-->
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-md-8">
+                        <p class="copy_right ">
+                           
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by <a href="https://compiledigital.com/" target="_blank">Ruman Sanghera</a>
+                        </p>
+                    </div>
+                    <div class="col-xl-5 col-md-4">
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
