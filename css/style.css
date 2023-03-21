@@ -2771,7 +2771,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_photography.scss */
 .photography_skill_area {
-  padding: 0px 0 0px 0;
+  padding: 90px 0 96px 0;
 }
 
 /* line 7, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_photography.scss */
@@ -2788,14 +2788,14 @@ h3 {
 @media (max-width: 767px) {
   /* line 7, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_photography.scss */
   .photography_skill_area .section_title p {
-    padding: 0;
+     padding: 0px 0 0px 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 7, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_photography.scss */
   .photography_skill_area .section_title p {
-    padding: 0;
+    padding: 0px 0 0px 0;
   }
 }
 
