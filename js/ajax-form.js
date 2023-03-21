@@ -1,3 +1,4 @@
+/*
 $(function() {
 
 	// Get the form.
@@ -44,5 +45,7 @@ $(function() {
 			}
 		});
 	});
+	
 
 });
+*/
