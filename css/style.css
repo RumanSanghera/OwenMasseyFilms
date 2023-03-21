@@ -20,14 +20,12 @@
 /* Large Mobile :480px. */
 /* 1. Theme default css */
 /* line 5, ../../Arafath/CL/CL October/215. Photography/HTML/scss/theme-default.scss */
-html{
-  height: 100%;
-}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  height: 100%;
+ 
 }
 
 /* line 12, ../../Arafath/CL/CL October/215. Photography/HTML/scss/theme-default.scss */
@@ -1811,7 +1809,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_gallery.scss */
 .gallery_area {
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 @media (max-width: 767px) {
@@ -2486,7 +2484,7 @@ h3 {
   padding: 600px 40px;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 100;
+  z-index: 0;
 }
 @media (max-width: 767px) {
   /* line 13, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_bradcam.scss */
@@ -2496,9 +2494,6 @@ h3 {
     height: 400px;
     top: 0%;
 
-
-    
-    
 
   }
 }
