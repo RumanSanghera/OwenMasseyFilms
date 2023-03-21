@@ -49,8 +49,8 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">Home</a></li>
-                                        <li><a href="album.html">Portfolio</a></li>
+                                        <li><a  href="index.html">Home</a></li>
+                                        <li><a class="active" href="album.html">About</a></li>
                                         <li><a href="testimonial.html">Testimonials</a></li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
@@ -60,9 +60,9 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="social_links">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCCU_eoOEBVtA33OvEgCwfQQ"> <i class="fa fa-youtube"></i> </a></li>
+                                    <li><a href="https://www.linkedin.com/in/owen-massey-0307aa196/"> <i class="fa fa-linkedin"></i> </a></li>
+                                    <li><a href="https://www.instagram.com/owenmasseyfilm/"> <i class="fa fa-instagram"></i> </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,195 +91,43 @@
         </div>
         <!-- / bradcam_area  -->
 
-        <script>
-            /* Get the element you want displayed in fullscreen */ 
-            
-            
-            /* Function to open fullscreen mode and pause the video once closed full screen*/
-            function openFullscreen(video) {
 
-                var elem = document.getElementById(video);
-
-                if (elem.requestFullscreen) {
-                    elem.requestFullscreen();
-                    elem.play();
-                } else if (elem.webkitRequestFullscreen) { /* Safari */
-                    elem.webkitRequestFullscreen();
-                    elem.play();
-                } else if (elem.msRequestFullscreen) { /* IE11 */
-                    elem.msRequestFullscreen();
-                    elem.play();
-                }
-
-                elem.addEventListener('fullscreenchange',
-                function(event) {
-                    if (!document.fullscreenElement) {
-                        elem.pause();
-                    }
-                },false);
-
-                elem.addEventListener('webkitfullscreenchange',
-                function(event) {
-                    if (!document.webkitFullscreenElement) {
-                        elem.pause();
-                    }
-                },false);
-
-            }
-
-            </script>
-
-    <!-- gallery_area  -->
-    <div class="gallery_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-7">
-                    <div class="section_title text-center mb-50">
-                        <h3>About</h3>
-                        <p>This is my portfolio NICE!</p>
+        <!-- photography_skill_area  -->
+        <div class="photography_skill_area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 col-md-9">
+                        <div class="section_title text-center">
+                            <h3>About Me</h3>
+                            <p>My Name is Owen Massey And I Love A Bagel</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0 ">
-            <div class="row no-gutters">
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/beatyTimeThumb.jpg" alt="" >
-                            <video width="0%" controls id="1" >
-                                <source src="/ownemasey2/img/banner/Beauty%20Time%20Salon%20Film.mp4" type="video/mp4" />
-                            </video>
+        <!-- /photography_skill_area  -->
+    
+        <!-- Film Videographer  -->
+        <div class="wild_photography">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters align-items-center ">
+                    <div class="col-lg-6">
+                        <div class="wildlife_photo">
+                            <img src="img/owen.jpg" alt="">
                         </div>
-                        <button class="hover" onclick="openFullscreen('1');"></button>
                     </div>
-                </div>
-
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/oragneJuice.jpg" alt="" >
-                            <video width="0%" controls id="2" >
-                                <source src="/ownemasey2/img/video/OrangeJuice.mp4" type="video/mp4" />
-                            </video>
+                    <div class="col-lg-6">
+                        <div class="section_title">
+                            <h3>Film Videographer</h3>
+                            <p>Something about my experience here <br> I love doing film or something <br> why should you pick idk.</p>
+                            <a href="#" class="black_btn">Explore Work</a>
                         </div>
-                        <button class="hover" onclick="openFullscreen('2');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/stickyChicken.jpg" alt="" >
-                            <video width="0%" controls id="3" >
-                                <source src="/ownemasey2/img/video/StickyChicken.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('3');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/kinder.jpg" alt="" >
-                            <video width="0%" controls id="4" >
-                                <source src="/ownemasey2/img/video/KinderBrownie.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('4');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/posHRconf22.jpg" alt="" >
-                            <video width="0%" controls id="5" >
-                                <source src="/ownemasey2/img/video/PositiveHRconference.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('5');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/postHRForum.jpg" alt="" >
-                            <video width="0%" controls id="6" >
-                                <source src="/ownemasey2/img/video/PositiveHRForum.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('6');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/CCA.jpg" alt="" >
-                            <video width="0%" controls id="7" >
-                                <source src="/ownemasey2/img/video/CCA.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('7');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/mileyDom.jpg" alt="" >
-                            <video width="0%" controls id="8" >
-                                <source src="/ownemasey2/img/video/MidyeDolma.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('8');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 backDropblack">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/BFF.jpg" alt="" >
-                            <video width="0%" controls id="9" >
-                                <source src="/ownemasey2/img/video/BFF.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('9');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/LancashireWildlifeTrust.jpg" alt="" >
-                            <video width="0%" controls id="10" >
-                                <source src="/ownemasey2/img/video/LancashireWildlifeTrust.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('10');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/BlackburnCollege.jpg" alt="" >
-                            <video width="0%" controls id="11" >
-                                <source src="/ownemasey2/img/video/BlackburnCollege.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('11');"></button>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_photography">
-                        <div class="thumb">
-                            <img src="img/thumbnails/TheGraftMovement.jpg" alt="" >
-                            <video width="0%" controls id="12" >
-                                <source src="/ownemasey2/img/video/TheGraftMovement.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <button class="hover" onclick="openFullscreen('12');"></button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /gallery_area  -->
+        <!-- /Film Videographer  -->
+
 
     <!-- Space Before Footer-->
 
@@ -313,17 +161,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         <div class="socail_links">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-facebook"></i>
+                                    <a href="https://www.youtube.com/channel/UCCU_eoOEBVtA33OvEgCwfQQ">
+                                        <i class="ti-youtube"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-twitter-alt"></i>
+                                    <a href="https://www.linkedin.com/in/owen-massey-0307aa196/">
+                                        <i class="ti-linkedin"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.instagram.com/owenmasseyfilm/">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
