@@ -81,7 +81,7 @@
     <!-- header-end -->
 
     <div class="video-container">
-        <video loop="true" autoplay="autoplay" controls muted>
+        <video loop="true" playsinline autoplay="autoplay" muted>
             <source src="https://owenmasseyfilm.com/img/showReel.mp4" type="video/mp4" />
         </video> 
         
@@ -133,6 +133,11 @@
             //elem.playVideo();
             //this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
           
+        } 
+        else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitEnterFullscreen) {
+            elem.webkitEnterFullscreen(); //for iphone this code worked
         }
 
         elem.addEventListener('fullscreenchange',
@@ -163,7 +168,7 @@
                 <div class="single_photography">
                     <div class="thumb">
                         <img src="img/thumbnails/beatyTimeThumb.jpg" alt="" >
-                            <iframe id="1" width="0" height="0" src="https://www.youtube.com/embed/Q8iGKyS6lSQ?enablejsapi=1&html5=1" frameborder="0"  allowfullscreen></iframe>
+                            <iframe id="1" width="0" height="0" src="https://www.youtube.com/embed/Q8iGKyS6lSQ?enablejsapi=1&html5=1" frameborder="0"  playsinline="" preload="" allowfullscreen></iframe>
                     </div>
                     <button class="hover" onclick="openFullscreen('1');"></button>
                 </div>
