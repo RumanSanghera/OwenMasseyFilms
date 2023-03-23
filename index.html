@@ -113,6 +113,24 @@
     /* Get the element you want displayed in fullscreen */ 
     
     /* Function to open fullscreen mode and pause the video once closed full screen*/
+    function playVid(vid,img) {
+    const image = document.getElementById(img);
+    const video = document.getElementById(vid);
+
+    image.style.display = 'none';
+    video.style.display = 'block';
+   
+    //image.style.width = '0%';
+    //image.style.height = '0%';
+
+    //video.style.width = '100%';
+    //video.style.height = '100%';
+    //video.playVideo();
+    video.play();
+
+   // video.play();
+    
+    }
     function openFullscreen(video) {
 
         var elem = document.getElementById(video);
@@ -154,25 +172,33 @@
                 //elem.pause();
                 this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
             }
-        },fa ,lse);
+        },false);
 
     }
 
     </script>
 
 <div id="gallery_area1" class="gallery_area">
-    
     <div class="container-fluid p-0 ">
         <div class="row no-gutters">
+
             <div class="col-xl-4 col-md-4 backDropblack">
+                <img src="img/thumbnails/beatyTimeThumb.jpg" id="1a" class="hover" width="100%" height="100%" alt="" onclick="playVid('1',this.id);" >
+
+                <iframe id="1" style="display:none" width="100%" height="100%"  src="https://www.youtube.com/embed/Q8iGKyS6lSQ?showinfo=0&playlist=Q8iGKyS6lSQ&loop=1&modestbranding=1" frameborder="0"  allowfullscreen></iframe>
+
+                <!-- 
                 <div class="single_photography">
                     <div class="thumb">
-                        <img src="img/thumbnails/beatyTimeThumb.jpg" alt="" >
-                            <iframe id="1" width="0" height="0" src="https://www.youtube.com/embed/Q8iGKyS6lSQ?enablejsapi=1&html5=1" frameborder="0"  playsinline="" preload="" allowfullscreen></iframe>
+                        
                     </div>
                     <button class="hover" onclick="openFullscreen('1');"></button>
                 </div>
+                -->
             </div>
+
+
+            
             <div class="col-xl-4 col-md-4 backDropblack">
                 <div class="single_photography">
                     <div class="thumb">
@@ -255,10 +281,7 @@
                     
                     <div class="thumb">
                         <img src="img/thumbnails/oragneJuice.jpg" alt="" >
-                        <video width="0%" controls id="2" >
-                            <source src="/ownemasey2/img/video/OrangeJuice.mp4" type="video/mp4" />
-                        </video>
-                       
+                        <iframe id="2" width="0" height="0" src="https://www.youtube.com/embed/7gsAm2XOdrU" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <button class="hover" onclick="openFullscreen('2');"></button>
                 </div>
@@ -268,9 +291,7 @@
                 <div class="single_photography">
                     <div class="thumb">
                         <img src="img/thumbnails/stickyChicken.jpg" alt="" >
-                        <video width="0%" controls id="3" >
-                            <source src="/ownemasey2/img/video/StickyChicken.mp4" type="video/mp4" />
-                        </video>
+                        <iframe id="3" width="0" height="0" src="https://www.youtube.com/embed/K6rQTK5flNI" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <button class="hover" onclick="openFullscreen('3');"></button>
                 </div>
@@ -280,13 +301,13 @@
                 <div class="single_photography">
                     <div class="thumb">
                         <img src="img/thumbnails/kinder.jpg" alt="" >
-                        <video width="0%" controls id="4" >
-                            <source src="/ownemasey2/img/video/KinderBrownie.mp4" type="video/mp4" />
-                        </video>
+                        <iframe id="4" width="0" height="0" src="https://www.youtube.com/embed/Xe3G5aJaAO0" frameborder="0" allowfullscreen></iframe>
+
                     </div>
                     <button class="hover" onclick="openFullscreen('4');"></button>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
