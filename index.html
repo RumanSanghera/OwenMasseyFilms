@@ -114,15 +114,17 @@
     
     /* Function to open fullscreen mode and pause the video once closed full screen*/
     function playVid(vid,img) {
+
+    //ex vid = 1 | img = 1a
+
+
     const image = document.getElementById(img);
     const video = document.getElementById(vid);
 
     image.style.display = 'none';
     video.style.display = 'block';
 
-    video.play();
-    
-    
+ 
     //image.style.width = '0%';
     //image.style.height = '0%';
 
@@ -185,124 +187,68 @@
 
             <div class="col-xl-4 col-md-4 backDropblack">
                 <img src="img/thumbnails/beatyTimeThumb.jpg" id="1a" class="hover" width="100%" height="100%" alt="" onclick="playVid('1',this.id);" >
-
                 <iframe id="1" style="display:none" width="100%" height="100%"  src="https://www.youtube.com/embed/Q8iGKyS6lSQ?showinfo=0&playlist=Q8iGKyS6lSQ&loop=1&modestbranding=1" frameborder="0"  allowfullscreen></iframe>
-
-                <!-- 
-                <div class="single_photography">
-                    <div class="thumb">
-                        
-                    </div>
-                    <button class="hover" onclick="openFullscreen('1');"></button>
-                </div>
-                -->
             </div>
-
-
             
             <div class="col-xl-4 col-md-4 backDropblack">
-                
-                        <iframe id="5" width="100%" height="100%" src="https://www.youtube.com/embed/nkvTNy6UFOA?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
-             
+                <img src="img/thumbnails/posHRconf22.jpg" id="5a" class="hover" width="100%" height="100%" alt="" onclick="playVid('5',this.id);" >
+                <iframe id="5" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/nkvTNy6UFOA?showinfo=0&playlist=nkvTNy6UFOA&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
+
             <div class="col-xl-4 col-md-4 backDropblack">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/postHRForum.jpg" alt="" >
-                        
-                        <iframe id="6" width="0" height="0" src="https://www.youtube.com/embed/rTWqCVpXBoo?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('6');"></button>
-                </div>
+                <img src="img/thumbnails/postHRForum.jpg" id="6a" class="hover" width="100%" height="100%" alt="" onclick="playVid('6',this.id);" >
+                <iframe id="6" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/rTWqCVpXBoo?showinfo=0&playlist=rTWqCVpXBoo&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
+            
             <div class="col-xl-4 col-md-4 backDropblack">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/CCA.jpg" alt="" >
-                    
-                            <iframe id="7" width="0" height="0" src="https://www.youtube.com/embed/k8OD6ZxaniE?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
-                        
-                    </div>
-                    <button class="hover" onclick="openFullscreen('7');"></button>
-                </div>
+                <img src="img/thumbnails/CCA.jpg" id="7a" class="hover" width="100%" height="100%" alt="" onclick="playVid('7',this.id);" >
+                <iframe id="7" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/k8OD6ZxaniE?showinfo=0&playlist=k8OD6ZxaniE&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
+
             <div class="col-xl-4 col-md-4 backDropblack">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/mileyDom.jpg" alt="" >
-                            <iframe id="8" width="0" height="0" src="https://www.youtube.com/embed/rsYFJOc0v34?enablejsapi=1&html5=1" frameborder="0"  allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('8');"></button>
-                </div>
+                <img src="img/thumbnails/mileyDom.jpg" id="8a" class="hover" width="100%" height="100%" alt="" onclick="playVid('8',this.id);" >
+
+                <iframe id="8" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/rsYFJOc0v34?showinfo=0&playlist=rsYFJOc0v34&loop=1&modestbranding=1" frameborder="0"  allowfullscreen></iframe>
             </div>
+
             <div class="col-xl-4 col-md-4 backDropblack">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/BFF.jpg" alt="" >
-                        <iframe id="9" width="0" height="0" src="https://www.youtube.com/embed/NTiWo0aL3fo?enablejsapi=1&html5=1"  frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('9');"></button>
-                </div>
+                <img src="img/thumbnails/BFF.jpg" id="9a" class="hover" width="100%" height="100%" alt="" onclick="playVid('9',this.id);" >
+
+                <iframe id="9" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/NTiWo0aL3fo?showinfo=0&playlist=NTiWo0aL3fo&loop=1&modestbranding=1"  frameborder="0" allowfullscreen></iframe>
             </div>
+
             <div class="col-xl-4 col-md-4 backDropblack">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/LancashireWildlifeTrust.jpg" alt="" >
-                        <iframe id="10" width="0" height="0" src="https://www.youtube.com/embed/wL96bePewA0?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('10');"></button>
-                </div>
+                <img src="img/thumbnails/LancashireWildlifeTrust.jpg" id="10a" class="hover" width="100%" height="100%" alt="" onclick="playVid('10',this.id);" >
+
+                <iframe id="10" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/wL96bePewA0?showinfo=0&playlist=wL96bePewA0&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
+
             <div class="col-xl-4 col-md-4 backDropblack" >
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/BlackburnCollege.jpg" alt="" >
-                        <iframe  id="11" width="0" height="0" src="https://www.youtube.com/embed/P4aAxoPcT2E?enablejsapi=1&html5=1" tframeborder="0"  allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('11');"></button>
-                </div>
+                <img src="img/thumbnails/BlackburnCollege.jpg" id="11a" class="hover" width="100%" height="100%" alt="" onclick="playVid('11',this.id);" >
+
+                <iframe  id="11" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/P4aAxoPcT2E?showinfo=0&playlist=P4aAxoPcT2E&loop=1&modestbranding=1" tframeborder="0"  allowfullscreen></iframe>
             </div>
 
             <div class="col-xl-4 col-md-4 backDropblack">
+                <img src="img/thumbnails/TheGraftMovement.jpg" id="12a" class="hover" width="100%" height="100%" alt="" onclick="playVid('12',this.id);" >
 
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/TheGraftMovement.jpg" alt="" >
-                        <iframe id="12" width="0" height="0" src="https://www.youtube.com/embed/pH932_0MxDw?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('12');"></button>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-4">
-                <div class="single_photography">
-                    
-                    <div class="thumb">
-                        <img src="img/thumbnails/oragneJuice.jpg" alt="" >
-                        <iframe id="2" width="0" height="0" src="https://www.youtube.com/embed/7gsAm2XOdrU" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('2');"></button>
-                </div>
+                <iframe id="12" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/pH932_0MxDw?showinfo=0&playlist=pH932_0MxDw&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="col-xl-4 col-md-4">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/stickyChicken.jpg" alt="" >
-                        <iframe id="3" width="0" height="0" src="https://www.youtube.com/embed/K6rQTK5flNI" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <button class="hover" onclick="openFullscreen('3');"></button>
-                </div>
+                <img src="img/thumbnails/oragneJuice.jpg" id="2a" class="hover" width="100%" height="100%" alt="" onclick="playVid('2',this.id);" >
+                <iframe id="2" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/7gsAm2XOdrU?showinfo=0&playlist=7gsAm2XOdrU&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="col-xl-4 col-md-4">
-                <div class="single_photography">
-                    <div class="thumb">
-                        <img src="img/thumbnails/kinder.jpg" alt="" >
-                        <iframe id="4" width="0" height="0" src="https://www.youtube.com/embed/Xe3G5aJaAO0" frameborder="0" allowfullscreen></iframe>
+               
+                <img src="img/thumbnails/stickyChicken.jpg" id="3a" class="hover" width="100%" height="100%" alt="" onclick="playVid('3',this.id);" >
+                <iframe id="3" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/K6rQTK5flNI?showinfo=0&playlist=K6rQTK5flNI&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-                    </div>
-                    <button class="hover" onclick="openFullscreen('4');"></button>
-                </div>
+            <div class="col-xl-4 col-md-4">
+                <img src="img/thumbnails/kinder.jpg" id="4a" class="hover" width="100%" height="100%" alt="" onclick="playVid('4',this.id);" >
+                <iframe id="4" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/Xe3G5aJaAO0?showinfo=0&playlist=Xe3G5aJaAO0&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
             
         </div>
