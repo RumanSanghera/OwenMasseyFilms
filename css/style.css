@@ -888,6 +888,17 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 767px){
+  .showReelDesktop{
+      display: none;}
+}
+@media only screen and (min-width: 767px){
+  
+  .showReelMobile {
+  display: none;
+ }
+}
+
 /* line 16, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_header.scss */
 .header-area .main-header-area {
   padding: 14px 150px;
