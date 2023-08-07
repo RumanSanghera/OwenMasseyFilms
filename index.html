@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Home - Owen Massey Film</title>
-    <meta name="description" content="Hi im Owen , Welcome to my portfolio showcasing my work ive done for the past 5 years as a film videographer">
+    <meta name="description"
+        content="Hi im Owen , Welcome to my portfolio showcasing my work ive done for the past 5 years as a film videographer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -20,24 +20,16 @@
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
 
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    
+
     <!-- header-start -->
     <header>
         <div class="header-area ">
@@ -47,7 +39,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logo.png" class="logoimg"  alt="">
+                                    <img src="img/logo.png" class="logoimg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -66,9 +58,12 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="social_links">
                                 <ul>
-                                    <li><a href="https://www.youtube.com/channel/UCCU_eoOEBVtA33OvEgCwfQQ"> <i class="fa fa-youtube"></i> </a></li>
-                                    <li><a href="https://www.linkedin.com/in/owen-massey-0307aa196/"> <i class="fa fa-linkedin"></i> </a></li>
-                                    <li><a href="https://www.instagram.com/owenmasseyfilm/"> <i class="fa fa-instagram"></i> </a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCCU_eoOEBVtA33OvEgCwfQQ"> <i
+                                                class="fa fa-youtube"></i> </a></li>
+                                    <li><a href="https://www.linkedin.com/in/owen-massey-0307aa196/"> <i
+                                                class="fa fa-linkedin"></i> </a></li>
+                                    <li><a href="https://www.instagram.com/owenmasseyfilm/"> <i
+                                                class="fa fa-instagram"></i> </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,19 +79,19 @@
     <!-- header-end -->
 
     <div class="video-container">
-        <video  width="100%" height="100%" loop="true" loop playsinline autoplay="autoplay" muted>
-            <source src="https://owenmasseyfilm.com/img/showReel.mp4" type="video/mp4" class="showReelDesktop"/>
+        <video width="100%" height="100%" loop="true" loop playsinline autoplay="autoplay" muted>
+            <source src="https://owenmasseyfilm.com/img/showReel.mp4" type="video/mp4" class="showReelDesktop" />
             <source src="https://owenmasseyfilm.com/img/showReelMobile.mp4" type="video/mp4" class="showReelMobile" />
 
 
-        </video> 
-        
-      </div>
-    
+        </video>
+
+    </div>
+
     <!-- / bradcam_area  -->
 
 
-  
+
 
     <!-- photography_skill_area  -->
     <div class="photography_skill_area">
@@ -113,193 +108,167 @@
     </div>
     <!-- /photography_skill_area  -->
 
-   <!-- gallery_area  -->
+    <!-- gallery_area  -->
 
-   <script>
-    /* Get the element you want displayed in fullscreen */ 
-    
-    /* Function to open fullscreen mode and pause the video once closed full screen*/
-    function playVid(vid,img) {
+    <script>
 
-    //ex vid = 1 | img = 1a
+        function playVid(vid, img) {
 
+            const image = document.getElementById(img);
+            const video = document.getElementById(vid);
 
-    const image = document.getElementById(img);
-    const video = document.getElementById(vid);
+            image.style.display = 'none';
+            video.style.display = 'block';
 
-    image.style.display = 'none';
-    video.style.display = 'block';
+            for (let i = 0; i <= 13; i++) {
 
-        /*
-    video.addEventListener("load", function() {
-        console.log("loaded");
-        video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-   });*/
+                if (i != vid) {
+                    const video2 = document.getElementById(i);
 
+                    if (video2 != null) {
+                        if (video2.style.display != 'none') {
 
+                            video2.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                            video2.style.display = 'none'
+                        }
 
+                    }
+                    const image2 = document.getElementById(i + 'a');
 
- 
-    for(let i = 0; i <= 13; i++)
-    {
-      
-        if(i != vid)
-        {
-            const video2 = document.getElementById(i);
+                    if (image2 != null) {
+                        if (image2.style.display == 'none') {
+                            image2.style.display = '';
+                        }
 
-            if(video2 != null)
-            {
-                if(video2.style.display != 'none')
-                {
- 
-                    video2.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-                    video2.style.display = 'none'
+                    }
+
                 }
-                
             }
 
-
-            const image2 = document.getElementById(i + 'a');
-
-            if(image2 != null)
-            {
-                if( image2.style.display == 'none')
-                {
-                    image2.style.display = '';
-                }
-                
-            }
-            
-        }
-    }
-    
-    }
-    function openFullscreen(video) {
-
-        var elem = document.getElementById(video);
-
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-            
-            //elem.playVideo();
-            //this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-            
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-            elem.webkitRequestFullscreen();
-            //elem.playVideo();
-            //this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-           
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-            elem.msRequestFullscreen();
-            //elem.playVideo();
-            //this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-          
-        } 
-        else if (elem.mozRequestFullScreen) {
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitEnterFullscreen) {
-            elem.webkitEnterFullscreen(); //for iphone this code worked
         }
 
-        elem.addEventListener('fullscreenchange',
-        function(event) {
-            if (!document.fullscreenElement) {
-               // elem.pause();
-                this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-            }
-        },false);
 
-        elem.addEventListener('webkitfullscreenchange',
-        function(event) {
-            if (!document.webkitFullscreenElement) {
-                //elem.pause();
-                this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-            }
-        },false);
-
-    }
-    
     </script>
 
-<div id="gallery_area1" class="gallery_area">
-    <div class="container-fluid p-0 ">
-        <div class="row no-gutters">
+    <div id="gallery_area1" class="gallery_area">
+        <div class="container-fluid p-0 ">
+            <div class="row no-gutters">
 
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/dpc.jpg" id="13a" class="hover" width="100%" height="100%" alt="" onclick="playVid('13',this.id);" >
-                <iframe id="13" style="display:none" width="100%" height="100%"  src="https://www.youtube.com/embed/aI7V1jFSF2o?showinfo=0&playlist=aI7V1jFSF2o&loop=1&modestbranding=1&enablejsapi=1" frameborder="0"  allowfullscreen></iframe>
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/dpc.jpg" id="13a" class="hover" width="100%" height="100%"
+                        alt="" onclick="playVid('13',this.id);">
+
+                    <iframe id="13" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/aI7V1jFSF2o?showinfo=0&playlist=aI7V1jFSF2o&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/beatyTimeThumb.jpg" id="1a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('1',this.id);">
+                    <iframe id="1" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/Q8iGKyS6lSQ?showinfo=0&playlist=Q8iGKyS6lSQ&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/posHRconf22.jpg" id="5a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('5',this.id);">
+                    <iframe id="5" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/nkvTNy6UFOA?showinfo=0&playlist=nkvTNy6UFOA&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/postHRForum.jpg" id="6a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('6',this.id);">
+                    <iframe id="6" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/rTWqCVpXBoo?showinfo=0&playlist=rTWqCVpXBoo&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/CCA.jpg" id="7a" class="hover" width="100%" height="100%"
+                        alt="" onclick="playVid('7',this.id);">
+                    <iframe id="7" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/k8OD6ZxaniE?showinfo=0&playlist=k8OD6ZxaniE&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/mileyDom.jpg" id="8a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('8',this.id);">
+
+                    <iframe id="8" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/rsYFJOc0v34?showinfo=0&playlist=rsYFJOc0v34&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/BFF.jpg" id="9a" class="hover" width="100%" height="100%"
+                        alt="" onclick="playVid('9',this.id);">
+
+                    <iframe id="9" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/NTiWo0aL3fo?showinfo=0&playlist=NTiWo0aL3fo&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/LancashireWildlifeTrust.jpg" id="10a" class="hover"
+                        width="100%" height="100%" alt="" onclick="playVid('10',this.id);">
+
+                    <iframe id="10" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/wL96bePewA0?showinfo=0&playlist=wL96bePewA0&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/BlackburnCollege.jpg" id="11a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('11',this.id);">
+
+                    <iframe id="11" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/P4aAxoPcT2E?showinfo=0&playlist=P4aAxoPcT2E&loop=1&modestbranding=1&enablejsapi=1"
+                        tframeborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4 backDropblack">
+                    <img loading="lazy" src="img/thumbnails/TheGraftMovement.jpg" id="12a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('12',this.id);">
+
+                    <iframe id="12" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/pH932_0MxDw?showinfo=0&playlist=pH932_0MxDw&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+                    <img loading="lazy" src="img/thumbnails/oragneJuice.jpg" id="2a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('2',this.id);">
+                    <iframe id="2" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/7gsAm2XOdrU?showinfo=0&playlist=7gsAm2XOdrU&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+
+                    <img loading="lazy" src="img/thumbnails/stickyChicken.jpg" id="3a" class="hover" width="100%"
+                        height="100%" alt="" onclick="playVid('3',this.id);">
+                    <iframe id="3" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/K6rQTK5flNI?showinfo=0&playlist=K6rQTK5flNI&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+                    <img loading="lazy" src="img/thumbnails/kinder.jpg" id="4a" class="hover" width="100%" height="100%"
+                        alt="" onclick="playVid('4',this.id);">
+                    <iframe id="4" style="display:none" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/Xe3G5aJaAO0?showinfo=0&playlist=Xe3G5aJaAO0&loop=1&modestbranding=1&enablejsapi=1"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
             </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/beatyTimeThumb.jpg" id="1a" class="hover" width="100%" height="100%" alt="" onclick="playVid('1',this.id);" >
-                <iframe id="1" style="display:none" width="100%" height="100%"  src="https://www.youtube.com/embed/Q8iGKyS6lSQ?showinfo=0&playlist=Q8iGKyS6lSQ&loop=1&modestbranding=1&enablejsapi=1" frameborder="0"  allowfullscreen></iframe>
-            </div>
-            
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/posHRconf22.jpg" id="5a" class="hover" width="100%" height="100%" alt="" onclick="playVid('5',this.id);" >
-                <iframe id="5" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/nkvTNy6UFOA?showinfo=0&playlist=nkvTNy6UFOA&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/postHRForum.jpg" id="6a" class="hover" width="100%" height="100%" alt="" onclick="playVid('6',this.id);" >
-                <iframe id="6" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/rTWqCVpXBoo?showinfo=0&playlist=rTWqCVpXBoo&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/CCA.jpg" id="7a" class="hover" width="100%" height="100%" alt="" onclick="playVid('7',this.id);" >
-                <iframe id="7" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/k8OD6ZxaniE?showinfo=0&playlist=k8OD6ZxaniE&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/mileyDom.jpg" id="8a" class="hover" width="100%" height="100%" alt="" onclick="playVid('8',this.id);" >
-
-                <iframe id="8" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/rsYFJOc0v34?showinfo=0&playlist=rsYFJOc0v34&loop=1&modestbranding=1&enablejsapi=1" frameborder="0"  allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/BFF.jpg" id="9a" class="hover" width="100%" height="100%" alt="" onclick="playVid('9',this.id);" >
-
-                <iframe id="9" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/NTiWo0aL3fo?showinfo=0&playlist=NTiWo0aL3fo&loop=1&modestbranding=1&enablejsapi=1"  frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/LancashireWildlifeTrust.jpg" id="10a" class="hover" width="100%" height="100%" alt="" onclick="playVid('10',this.id);" >
-
-                <iframe id="10" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/wL96bePewA0?showinfo=0&playlist=wL96bePewA0&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack" >
-                <img loading="lazy" src="img/thumbnails/BlackburnCollege.jpg" id="11a" class="hover" width="100%" height="100%" alt="" onclick="playVid('11',this.id);" >
-
-                <iframe  id="11" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/P4aAxoPcT2E?showinfo=0&playlist=P4aAxoPcT2E&loop=1&modestbranding=1&enablejsapi=1" tframeborder="0"  allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4 backDropblack">
-                <img loading="lazy" src="img/thumbnails/TheGraftMovement.jpg" id="12a" class="hover" width="100%" height="100%" alt="" onclick="playVid('12',this.id);" >
-
-                <iframe id="12" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/pH932_0MxDw?showinfo=0&playlist=pH932_0MxDw&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4">
-                <img loading="lazy" src="img/thumbnails/oragneJuice.jpg" id="2a" class="hover" width="100%" height="100%" alt="" onclick="playVid('2',this.id);" >
-                <iframe id="2" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/7gsAm2XOdrU?showinfo=0&playlist=7gsAm2XOdrU&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4">
-               
-                <img loading="lazy" src="img/thumbnails/stickyChicken.jpg" id="3a" class="hover" width="100%" height="100%" alt="" onclick="playVid('3',this.id);" >
-                <iframe id="3" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/K6rQTK5flNI?showinfo=0&playlist=K6rQTK5flNI&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xl-4 col-md-4">
-                <img loading="lazy" src="img/thumbnails/kinder.jpg" id="4a" class="hover" width="100%" height="100%" alt="" onclick="playVid('4',this.id);" >
-                <iframe id="4" style="display:none" width="100%" height="100%" src="https://www.youtube.com/embed/Xe3G5aJaAO0?showinfo=0&playlist=Xe3G5aJaAO0&loop=1&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
         </div>
     </div>
-</div>
-<!-- /gallery_area  -->
+    <!-- /gallery_area  -->
 
     <!-- Space Before Footer-->
 
@@ -308,7 +277,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-9 col-md-9">
                     <div class="section_title text-center">
-                        
+
                     </div>
                 </div>
             </div>
@@ -324,8 +293,10 @@
                 <div class="row align-items-center">
                     <div class="col-xl-7 col-md-8">
                         <p class="copy_right ">
-                         
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by <a href="https://compiledigital.com/" target="_blank">Ruman Sanghera</a>
+
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | Made by <a
+                                href="https://compiledigital.com/" target="_blank">Ruman Sanghera</a>
                         </p>
                     </div>
                     <div class="col-xl-5 col-md-4">
@@ -349,41 +320,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </footer>
     <!--/ footer end  -->
 
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- JS here-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
-
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
     <script src="js/main.js"></script>
+
+
+
+
 </body>
 
 </html>

@@ -2520,6 +2520,9 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.backDropblack{
+  cursor: pointer;
+}
 @media(max-width: 992px){
   .video-container {
     margin-top: 122px;
@@ -6268,4 +6271,3 @@ h6 {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=style.css.map */
