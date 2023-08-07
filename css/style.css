@@ -873,6 +873,14 @@ h3 {
   z-index: 9;
   position: absolute;
 }
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+* {
+  box-sizing: border-box !important;
+}
 
 @media (max-width: 767px) {
   /* line 1, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_header.scss */
