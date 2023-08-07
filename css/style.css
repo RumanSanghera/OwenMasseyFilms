@@ -726,7 +726,9 @@ h3 {
     display: none;
   }
 }
-
+.logoimg {
+  width: 75px;
+}
 /* line 26, ../../Arafath/CL/CL October/215. Photography/HTML/scss/_section_title.scss */
 .section_title p {
   font-weight: 400;
