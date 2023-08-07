@@ -135,12 +135,11 @@
 
 
 
-    console.log("Test");
-
 
  
-    for(let i = 0; i < 12; i++)
+    for(let i = 0; i <= 13; i++)
     {
+      
         if(i != vid)
         {
             const video2 = document.getElementById(i);
@@ -216,12 +215,17 @@
         },false);
 
     }
-
+    
     </script>
 
 <div id="gallery_area1" class="gallery_area">
     <div class="container-fluid p-0 ">
         <div class="row no-gutters">
+
+            <div class="col-xl-4 col-md-4 backDropblack">
+                <img src="img/thumbnails/dpc.jpg" id="13a" class="hover" width="100%" height="100%" alt="" onclick="playVid('13',this.id);" >
+                <iframe id="13" style="display:none" width="100%" height="100%"  src="https://www.youtube.com/embed/aI7V1jFSF2o?showinfo=0&playlist=aI7V1jFSF2o&loop=1&modestbranding=1&enablejsapi=1" frameborder="0"  allowfullscreen></iframe>
+            </div>
 
             <div class="col-xl-4 col-md-4 backDropblack">
                 <img src="img/thumbnails/beatyTimeThumb.jpg" id="1a" class="hover" width="100%" height="100%" alt="" onclick="playVid('1',this.id);" >
